@@ -1,0 +1,64 @@
+
+----------------------------
+Hiir
+Kasvu on 18
+varv on  punane 
+nimi on  Kiot
+sugu on isane
+kaal on 35,5
+vanus on 7
+----------------------------
+
+----------------------------
+Koer
+Kasvu on Mops
+varv on  punane 
+nimi on  Kiot
+sugu on isane
+kaal on 35,5
+vanus on 7
+vanus on 7
+----------------------------
+
+----------------------------
+Koer
+Kasvu on Mops
+varv on kollane
+nimi on Murka
+sugu on isane
+kaal on 31,1
+vanus on 3
+vanus on 3
+----------------------------
+
+----------------------------
+Hiir
+Kasvu on 18
+varv on  punane 
+nimi on  Kiot
+sugu on isane
+kaal on 35,5
+vanus on 7
+----------------------------
+
+----------------------------
+Koer
+Kasvu on Mops
+varv on  punane 
+nimi on  Kiot
+sugu on isane
+kaal on 35,5
+vanus on 7
+vanus on 7
+----------------------------
+
+----------------------------
+Koer
+Kasvu on Mops
+varv on kollane
+nimi on Murka
+sugu on isane
+kaal on 31,1
+vanus on 3
+vanus on 3
+----------------------------

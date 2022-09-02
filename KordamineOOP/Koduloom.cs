@@ -27,5 +27,6 @@ namespace KordamineOOP
         public Koduloom() { }
         public abstract void print_Info();
         public abstract void print_Haal();
+        public abstract List<string> Return_List();
     }
 }

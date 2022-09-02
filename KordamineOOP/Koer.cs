@@ -12,6 +12,7 @@ namespace KordamineOOP
         public toug Toug;
         public Koer(toug Toug, string nimi, string varv, sugu loomaSugu, double kaal = 0, int vanus = 0, bool elav = false) : base(nimi, varv, loomaSugu, kaal, vanus, elav)
         {
+            this.Toug = Toug;   
         }
         public Koer(Koer koer)
         {
@@ -29,7 +30,21 @@ namespace KordamineOOP
         }
         public override void print_Haal()
         {
-            Console.WriteLine("aaa");
+            Console.WriteLine("");
+        }
+        public override List<string> Return_List()
+        {
+
+            var End = new List<string>();
+            End.Add("\n----------------------------\nKoer");
+            End.Add("Kasvu on " + Toug.ToString());
+            End.Add("varv on " + varv.ToString());
+            End.Add("nimi on " + nimi.ToString());
+            End.Add("sugu on " + loomaSugu.ToString());
+            End.Add("kaal on " + kaal.ToString());
+            End.Add("vanus on " + vanus.ToString());
+            End.Add("vanus on " + vanus.ToString() + "\n----------------------------");
+            return (End);
         }
         public void muudaNimi(string uusNimi) { nimi = uusNimi; }   
         public void muudaVarv(string uusVarv) { varv = uusVarv; }

@@ -10,12 +10,8 @@ namespace KordamineOOP
     {
         public static void WriteToListHiir(Hiir hiir)
         {
-
-            var list = new List<string>();
-            list = hiir.Return_List();
+            var list = hiir.Return_List();
             string path = @"C:\Users\opilane\source\repos\Georgi Gluhhov TARpv20\KordamineOOP\list.txt";
-
-
 
             using (StreamWriter writer = new StreamWriter(path, true))
             {
@@ -27,11 +23,8 @@ namespace KordamineOOP
         public static void WriteToListKoer(Koer koer)
         {
 
-            var list = new List<string>();
-            list = koer.Return_List();
+            var list = koer.Return_List();
             string path = @"C:\Users\opilane\source\repos\Georgi Gluhhov TARpv20\KordamineOOP\list.txt";
-
-
 
             using (StreamWriter writer = new StreamWriter(path, true))
             {

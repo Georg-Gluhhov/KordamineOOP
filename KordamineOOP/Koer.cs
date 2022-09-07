@@ -36,13 +36,12 @@ namespace KordamineOOP
         {
 
             var End = new List<string>();
-            End.Add("\nKoer");
+            End.Add("Koer");
             End.Add("Kasvu on " + Toug.ToString());
             End.Add("varv on " + varv.ToString());
             End.Add("nimi on " + nimi.ToString());
             End.Add("sugu on " + loomaSugu.ToString());
             End.Add("kaal on " + kaal.ToString());
-            End.Add("vanus on " + vanus.ToString());
             End.Add("vanus on " + vanus.ToString() + "\n!");
             return (End);
         }

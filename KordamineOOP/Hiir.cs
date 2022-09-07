@@ -36,7 +36,7 @@ namespace KordamineOOP
         {
 
             var End = new List<string>();
-            End.Add("\nHiir");
+            End.Add("Hiir");
             End.Add("Kasvu on " + kasvu.ToString());
             End.Add("varv on " + varv.ToString()); 
             End.Add("nimi on " + nimi.ToString());

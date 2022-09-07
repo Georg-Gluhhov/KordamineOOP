@@ -38,6 +38,7 @@ namespace KordamineOOP
         public static void ReadList()
         {
             var BigList = new List<String>();
+            int Split = 0;
             List<String> list = new List<String>(); 
             foreach (string line in System.IO.File.ReadLines(path))
             {
@@ -47,17 +48,69 @@ namespace KordamineOOP
                 }
                 else 
                 {
+                    Split+=1;
                     BigList.AddRange(list);
                     list.Clear();
                 }
             }
-            foreach(string item in BigList)
+
+            int g = 0;
+            foreach (String s in BigList)
             {
-                Console.WriteLine(item);    
+                if (g == 6) { g = 0; }
+                if (s == "Koer") { Koer koer = new Koer(Koer.toug.Mops, " ", " ", Koduloom.sugu.isane, 0, 0, true); }
+                else if( s=="Hiir") { Hiir hiir = new Hiir(18, " ", " ", Koduloom.sugu.isane, 0, 0, true); }
+                if (s == "Koer" || g > 0 && g !=6 ) { 
+                switch (s)
+                {
+                        case var _ when s.Contains("Kasvu on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("varv on"):
+                            Console.WriteLine(s);
+                            break;     
+                        case var _ when s.Contains("nimi on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("sugu on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("kaal on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("vanus on"):
+                            Console.WriteLine(s);
+                            break;
+                }
+                    g++;
+                }
+                else if (s == "Hiir" || g > 0 && g != 6)
+                {
+                    switch (s)
+                    {
+                        case var _ when s.Contains("Kasvu on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("varv on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("nimi on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("sugu on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("kaal on"):
+                            Console.WriteLine(s);
+                            break;
+                        case var _ when s.Contains("vanus on"):
+                            Console.WriteLine(s);
+                            break;
+                    }
+                    g++;
+                }
+
             }
-
-    
-
         }
     }
 }

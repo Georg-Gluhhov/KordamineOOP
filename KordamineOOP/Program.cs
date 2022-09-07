@@ -26,4 +26,5 @@ hiir.print_Info();
 WriteToListHiir(hiir);
 WriteToListKoer(koer);
 WriteToListKoer(veelkoer);
+ReadList();
 

@@ -35,6 +35,8 @@ namespace KordamineOOP
 
 
         }
+
+
         public static void ReadList()
         {
             var BigList = new List<String>();
@@ -58,16 +60,23 @@ namespace KordamineOOP
             foreach (String s in BigList)
             {
                 if (g == 6) { g = 0; }
-                if (s == "Koer") { Koer koer = new Koer(Koer.toug.Mops, " ", " ", Koduloom.sugu.isane, 0, 0, true); }
-                else if( s=="Hiir") { Hiir hiir = new Hiir(18, " ", " ", Koduloom.sugu.isane, 0, 0, true); }
+                if (s == $"Koer ") {Koer  koer = new  Koer(Koer.toug.Mops, " ", " ", Koduloom.sugu.isane, 0, 0, true);
+                    Split -= 1;
+                }
+                else if( s==$"Hiir") { Hiir hiir = new Hiir(18, " ", " ", Koduloom.sugu.isane, 0, 0, true);
+                    Split -= 1;
+                }
                 if (s == "Koer" || g > 0 && g !=6 ) { 
                 switch (s)
                 {
+                        case var _ when s.Contains("Koer"):
+                            Koer koer = new Koer(Koer.toug.Mops, " ", " ", Koduloom.sugu.isane, 0, 0, true);
+                            break;    
                         case var _ when s.Contains("Kasvu on"):
                             Console.WriteLine(s);
                             break;
                         case var _ when s.Contains("varv on"):
-                            Console.WriteLine(s);
+                            koer.muudaVarv(s.Replace(" varv on ", ""));
                             break;     
                         case var _ when s.Contains("nimi on"):
                             Console.WriteLine(s);

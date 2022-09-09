@@ -61,57 +61,58 @@ namespace KordamineOOP
            int g = 0;
             foreach (String s in BigList)
             {
-                if (g == 6) { g = 0; }
+
                 if (s == "Koer" || g > 0 && g !=6 ) { 
                 switch (s)
                 {    
                         case var _ when s.Contains("Kasvu on"):
-                            koer.muudaVarv(s.Replace(" Kasvu on ", ""));
+                            koer.muudaVarv(s.Replace("Kasvu on ", ""));
                             break;
                         case var _ when s.Contains("varv on"):
-                            koer.muudaVarv(s.Replace(" varv on ", ""));
+                            koer.muudaVarv(s.Replace("varv on  ", ""));
                             break;     
                         case var _ when s.Contains("nimi on"):
-                            koer.muudaNimi(s.Replace(" nimi on ", ""));
+                            koer.muudaNimi(s.Replace("nimi on  ", ""));
                             break;
                         case var _ when s.Contains("sugu on"):
-                            koer.muudaNimi(s.Replace(" sugu on ", ""));
+                            koer.muudaNimi(s.Replace("kaal on ", ""));
                             break;
                         case var _ when s.Contains("kaal on"):
-                            koer.muudaNimi(s.Replace(" kaal on ", ""));
+                            koer.muudaNimi(s.Replace("kaal on ", ""));
                             break;
                         case var _ when s.Contains("vanus on"):
-                            koer.muudaNimi(s.Replace(" vanus on ", ""));
+                            koer.muudaNimi(s.Replace("vanus on ", ""));
                             break;
                 }
                     g++;
-                    koer.print_Info();
+                    if (g == 6) { g = 0; koer.print_Info(); }
                 }
                 else if (s == "Hiir" || g > 0 && g != 6)
                 {
                     switch (s)
                     {
                         case var _ when s.Contains("Kasvu on"):
-                            koer.muudaVarv(s.Replace(" Kasvu on ", ""));
+                            koer.muudaVarv(s.Replace("Kasvu on ", ""));
                             break;
                         case var _ when s.Contains("varv on"):
-                            koer.muudaVarv(s.Replace(" varv on ", ""));
+                            koer.muudaVarv(s.Replace("varv on  ", ""));
                             break;
                         case var _ when s.Contains("nimi on"):
-                            koer.muudaNimi(s.Replace(" nimi on ", ""));
+                            koer.muudaNimi(s.Replace("nimi on  ", ""));
                             break;
                         case var _ when s.Contains("sugu on"):
-                            koer.muudaNimi(s.Replace(" sugu on ", ""));
+                            koer.muudaNimi(s.Replace("kaal on ", ""));
                             break;
                         case var _ when s.Contains("kaal on"):
-                            koer.muudaNimi(s.Replace(" kaal on ", ""));
+                            koer.muudaNimi(s.Replace("kaal on ", ""));
                             break;
                         case var _ when s.Contains("vanus on"):
-                            koer.muudaNimi(s.Replace(" vanus on ", ""));
+                            koer.muudaNimi(s.Replace("vanus on ", ""));
                             break;
+
                     }
                     g++;
-                    hiir.print_Info();
+                    if (g == 6) { g = 0; hiir.print_Info(); }
                 }
 
             }

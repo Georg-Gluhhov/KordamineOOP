@@ -26,7 +26,7 @@ namespace KordamineOOP
         }
         public override void print_Info()
         {
-            Console.WriteLine("{0}{1}{2} ta on {3} ja tema kaal on {4} ja ta on {5} aastat vana", Toug, varv, nimi, loomaSugu, kaal, vanus);
+            Console.WriteLine("{0} {1} {2} ta on {3} ja tema kaal on {4} ja ta on {5} aastat vana", Toug, varv, nimi, loomaSugu, kaal, vanus);
         }
         public override void print_Haal()
         {
